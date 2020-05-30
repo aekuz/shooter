@@ -122,7 +122,8 @@ while run:
 
     #enemy.update(cowboy,wall_horisontal1,wall_vertical1,wall_horisontal2,wall_vertical2,wall_horisontal3,wall_vertical3,wall_horisontal4,wall_vertical4)
     #enemy.draw(win)
-
+    if sprite.spritecollideany(cowboy, bandits):
+        run = False
 
     '''if sprite.collide_rect(cowboy,enemy):
 
